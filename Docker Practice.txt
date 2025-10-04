@@ -48,7 +48,8 @@ CMD python3 test.py
 3. docker build -t imrantaurus2003/pythonapp .
 4. docker images
 5. docker run --name pythonapp_c  imrantaurus2003/pythonapp
-6. docker push imrantaurus2003/pythonapp
+6. docker login
+7. docker push imrantaurus2003/pythonapp
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++
 PhP - Docker Build Image, Run it and Push it to Docker Hub.
@@ -95,3 +96,4 @@ TO BUILD DOCKER IMAGE WITH CUSTOM DOCKERFILE NAME:
 -----------------------------------------------------
 
 1. docker build -f df -t phpapp-8.3 .
+
