@@ -15,8 +15,6 @@ Running Wordpress application using docker-compose
 3. nano docker-compose.yml
 4. Paste following content in the file created in Step 3.
 
-version: '3.1'
-
 services:
 
   wordpress:
@@ -39,12 +37,14 @@ services:
       MYSQL_DATABASE: exampledb
       MYSQL_USER: exampleuser
       MYSQL_PASSWORD: examplepass
+      MYSQL_RANDOM_ROOT_PASSWORD: '1'
     volumes:
       - db:/var/lib/mysql
 
 volumes:
   wordpress:
   db:
+
 
 5. Run the following command to spin up the containers for individual services in detached mode.
 6. docker-compose up -d
@@ -167,3 +167,4 @@ volumes:
 
 6. docker-compose up -d
 7. Use EC2 public IP with 80 port to access the application
+
