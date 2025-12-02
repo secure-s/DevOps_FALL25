@@ -197,3 +197,4 @@ spec:
 8. Get the URL to access the wordpress service using the following command.
 9. minikube service wordpress --url
 10. Copy the returned URL in the browser. You will find wordpress setup in the Kubernetes cluster.
+
